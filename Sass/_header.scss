@@ -1,0 +1,86 @@
+.header{
+    &-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #BB2339;
+        // position: fixed;
+        // left: 0;
+        // right: 0;
+        // top: 0;
+        .header-img{
+            width: 135px;
+            height: 47px;            
+        }
+        .header-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            width: 539px;
+            height: 48px;         
+            .header-item{
+                .header-link-head{
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 4%;
+                    color: #FFFFFF; 
+                    &:hover{
+                        color: rgb(211, 188, 188);
+                    }                                       
+                }
+                .header-span{
+                    .header-button{
+                        width: 131px;
+                        height: 48px;
+                        border-radius: 100px;
+                        border-width: 1px;
+                        padding-top: 10px;
+                        padding-right: 40px;
+                        padding-bottom: 10px;
+                        padding-left: 40px;
+                        border: 1px solid #FFFFFF;    
+                        font-family: Open Sans;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 175%;
+                        letter-spacing: 5%;
+                        text-transform: capitalize;
+                        background-color: #BB2339;
+                        color: white;
+                        // text-align: center;
+                        &:hover{
+                            background-color: white;
+                            color:  #BB2339;
+                        }
+                    }
+                }
+            }
+        }
+        .hamburger{
+            display: none;
+            .bars{
+                width: 40px;
+                height: 4px;
+                margin: 5px;
+                background-color: #f1ebec;  
+                border-radius: 5px;       
+            }
+        } 
+    }
+}
+@media (max-width: 800px) {
+   .header{
+    &-container{
+        .header-list{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+    }
+   }
+}

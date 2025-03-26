@@ -1,0 +1,80 @@
+.hero{
+    &-container{
+        background: #F8F8F8;
+        .hero-title{
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: 3%;
+            text-transform: capitalize;
+            color: #BB2339;
+            // width: 347px;
+            // height: 48px;                      
+        }
+        .hero-head{
+            margin-top: 20px;
+            .hero-list{
+                gap: 20px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .hero-item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    // width: 270px;
+                    // height: 300px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 14px;
+                    background: #FFFFFF;
+                    .hero-img{
+                        width: 200px;
+                        height: 100x;                  
+                    }
+                    .hero-text{
+                        font-family: Open Sans;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        width: 270px;
+                        height: 50px;
+                        color: #242424;                                                
+                    }
+                    .rating {
+                        color: #FFD700; /* Oltin rang */
+                        font-size: 20px;
+                    }
+                    strong{
+                        font-family: Open Sans;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        color: #BB2339;   
+                        padding: 20px 16px;                                             
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .hero{
+        &-container {
+            .hero-title {
+                text-align: center;
+                font-size: 40px;
+            }
+            .hero-list {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
