@@ -1,7 +1,8 @@
 .wrapper {
     &-container {
         margin: 25px;
-        max-width: 100%;
+        // max-width: 100%;
+        box-sizing: border-box;
         overflow: hidden;
         .wrapper-title {
             font-family: Open Sans;
